@@ -1,13 +1,12 @@
 html {
     overflow: scroll;
+    display: inline-flex;
+    justify-content: center;
+    min-width: 1080px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 64px 0 32px;
+    margin: 64px 0 32px;
 }
 
 .tabs {
@@ -109,7 +108,6 @@ button {
     height: 720px;
     max-height: 1440px;
     border-radius: 0 16px 0 0;
-    box-shadow: 0 -2px 8px rgba(64, 64, 64, 25%);
     align-content: stretch;
     align-items: center;
 }

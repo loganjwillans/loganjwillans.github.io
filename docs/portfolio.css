@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -78,6 +82,23 @@ button {
 
 .contact button:hover {
     background-color: rgba(242, 113, 113, 1);
+}
+
+.close button {
+    height: 36px;
+    width: 72px;
+    background-color: #bbb;
+    border: none;
+    border-radius: 24px;
+    display: inline-block;
+    margin-left: 316px;
+    margin-top: 12px;
+    font-family: Noto, sans-serif;
+    font-size: 16px;
+}
+.close button:hover {
+    background-color: #989898;
+    cursor: pointer;
 }
 
 .folder {

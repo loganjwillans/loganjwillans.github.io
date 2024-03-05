@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    width: 1080px;
+    margin-top: 100px;
+}
+
+.tabs button {
+    min-width: 100px;
+    min-height: 50px;
+    margin-right: 20px;
+}
+
+.folder {
+    background-color: bisque;
+    width: 1080px;
+    height: 720px;
+}

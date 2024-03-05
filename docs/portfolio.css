@@ -9,7 +9,6 @@
 .tabs {
     display: flex;
     width: 1080px;
-
 }
 
 button {
@@ -27,47 +26,58 @@ button {
     border: none;
     background-color: bisque;
     border-radius: 8px 8px 0 0;
-
 }
 
 .about button:hover {
-    background-color: red;
-    border-color: red;
+    background-color: #eed3b7;
+    cursor: pointer;
+}
+
+.about button:active {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.about-active button {
+    border: none;
+    background-color: bisque;
+    border-radius: 8px 8px 0 0;
 }
 
 .work button {
     border: none;
-    background-color: palegreen;
+    background-color: rgba(127, 166, 255, 0.75);
     border-radius: 8px 8px 0 0;
 
 }
 
 .work button:hover {
-    background-color: red;
-    border-color: red;
+    background-color: rgba(127, 166, 255, 1);
 }
 
 .links button {
     border: none;
-    background-color: paleturquoise;
+    background-color: rgba(137, 215, 149, 0.75);
     border-radius: 8px 8px 0 0;
 
 }
 
 .links button:hover {
-    background-color: red;
-    border-color: red;
+    background-color: rgba(137, 215, 149, 1);
+}
+
+.links button:active {
+    background-color: rgba(137, 215, 149, 0.75);
 }
 
 .contact button {
-    background-color: palevioletred;
+    background-color: rgba(242, 113, 113, 0.75);
     border-radius: 8px 8px 0 0;
     border: none;
 }
 
 .contact button:hover {
-    border: solid;
-    background-color: palevioletred;
+    background-color: rgba(242, 113, 113, 1);
 }
 
 .folder {
@@ -76,6 +86,7 @@ button {
     background-color: bisque;
     width: 1080px;
     height: 720px;
+    max-height: 1440px;
     border-radius: 0 16px 0 0;
     box-shadow: 0 -2px 8px rgba(64, 64, 64, 25%);
     align-content: stretch;
@@ -89,6 +100,39 @@ button {
     transform: rotate(7deg);
     padding-top: 300px;
     font-family: "Noto Mono", monospace;
+}
+
+.folder-content {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    width: 1080px;
+    height: 1440px;
+    border-radius: 0 16px 16px 16px;
+    align-content: stretch;
+    align-items: center;
+}
+
+.paper {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    min-height: 1080px;
+    background-color: white;
+    margin: 40px 40px 0;
+    padding-top: 24px;
+    z-index: 5;
+    box-shadow: 0 2px 12px rgba(128, 128, 128, 0.33);
+}
+
+.paper h1 {
+    font-family: Noto, sans-serif;
+    align-self: center;
+}
+
+.paper p {
+    font-family: Noto, sans-serif;
+    padding: 0 64px 0;
 }
 
 .paperclip {
@@ -107,4 +151,13 @@ button {
     left: 340px;
     scale: 25%;
 
+}
+
+.divider {
+    position: absolute;
+    z-index: 1;
+    background-color: #b29f8a;
+    height: 2px;
+    width: 1080px;
+    top: 855px;
 }

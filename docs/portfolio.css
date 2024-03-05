@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    padding: 32px 0 32px;
+    padding: 64px 0 32px;
 }
 
 .tabs {
@@ -12,9 +12,14 @@
 
 }
 
+button {
+    font-family: Noto, sans-serif;
+    font-size: 16px;
+}
+
 .tabs button {
-    min-width: 150px;
-    min-height: 75px;
+    width: 150px;
+    height: 64px;
     margin-right: 20px;
 }
 
@@ -55,21 +60,51 @@
 }
 
 .contact button {
-    border: none;
     background-color: palevioletred;
     border-radius: 8px 8px 0 0;
-
+    border: none;
 }
 
 .contact button:hover {
-    background-color: red;
-    border-color: red;
+    border: solid;
+    background-color: palevioletred;
 }
 
 .folder {
+    display: flex;
+    flex-direction: column;
     background-color: bisque;
     width: 1080px;
     height: 720px;
     border-radius: 0 16px 0 0;
     box-shadow: 0 -2px 8px rgba(64, 64, 64, 25%);
+    align-content: stretch;
+    align-items: center;
+}
+
+.folder h2 {
+    position: relative;
+    bottom: 1497px;
+    left: 346px;
+    transform: rotate(7deg);
+    padding-top: 300px;
+    font-family: "Noto Mono", monospace;
+}
+
+.paperclip {
+    position: relative;
+    transform: rotate(27deg);
+    bottom: 101px;
+    left: 350px;
+    scale: 50%;
+    z-index: 50;
+}
+
+.headshot {
+    position: relative;
+    transform: rotate(7deg);
+    bottom: 710px;
+    left: 340px;
+    scale: 25%;
+
 }

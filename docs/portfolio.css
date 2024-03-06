@@ -49,18 +49,29 @@ button {
 
 .work button {
     border: none;
-    background-color: rgba(127, 166, 255, 0.75);
+    background-color: rgb(167, 191, 255);
     border-radius: 8px 8px 0 0;
-
 }
 
 .work button:hover {
-    background-color: rgba(127, 166, 255, 1);
+    background-color: rgb(127, 166, 255);
+    cursor: pointer;
+}
+
+.work button:active {
+    background-color: rgb(127, 166, 255);
+    cursor: pointer;
+}
+
+.work-active button {
+    border: none;
+    background-color: rgb(167, 191, 255);
+    border-radius: 8px 8px 0 0;
 }
 
 .links button {
     border: none;
-    background-color: rgba(137, 215, 149, 0.75);
+    background-color: rgb(152, 211, 161);
     border-radius: 8px 8px 0 0;
 
 }
@@ -95,6 +106,7 @@ button {
     font-family: Noto, sans-serif;
     font-size: 16px;
 }
+
 .close button:hover {
     background-color: #989898;
     cursor: pointer;
@@ -128,6 +140,28 @@ button {
     width: 1080px;
     height: 1440px;
     border-radius: 0 16px 16px 16px;
+    align-content: stretch;
+    align-items: center;
+}
+
+.folder-content-work {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(167, 191, 255);
+    width: 1080px;
+    height: 1440px;
+    border-radius: 16px;
+    align-content: stretch;
+    align-items: center;
+}
+
+.folder-content-links {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(152, 211, 161);
+    width: 1080px;
+    height: 1440px;
+    border-radius: 16px;
     align-content: stretch;
     align-items: center;
 }
@@ -179,4 +213,17 @@ button {
     height: 2px;
     width: 1080px;
     top: 855px;
+}
+
+.folder-content-work .divider {
+    background-color: rgb(97, 111, 148);
+}
+
+.corner {
+    position: absolute;
+    z-index: -1;
+    background-color: bisque;
+    height: 20px;
+    width: 20px;
+    left: 324px;
 }

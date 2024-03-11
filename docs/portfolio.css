@@ -5,6 +5,18 @@ html {
     min-width: 1080px;
 }
 
+h1 {
+    font-family: "Vollkorn", serif;
+}
+
+h2 {
+    font-family: "Vollkorn", serif;
+}
+
+p {
+    font-family: "Figtree", sans-serif;
+}
+
 .container {
     margin: 64px 0 32px;
 }
@@ -15,7 +27,7 @@ html {
 }
 
 button {
-    font-family: Noto, sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 20px;
 }
 
@@ -77,11 +89,19 @@ button {
 }
 
 .links button:hover {
-    background-color: rgba(137, 215, 149, 1);
+    background-color: rgb(115, 180, 125);
+    cursor: pointer;
 }
 
 .links button:active {
-    background-color: rgba(137, 215, 149, 0.75);
+    background-color: rgb(152, 211, 161);
+    cursor: pointer;
+}
+
+.links-active button {
+    border: none;
+    background-color: rgb(152, 211, 161);
+    border-radius: 8px 8px 0 0;
 }
 
 .contact button {
@@ -172,19 +192,53 @@ button {
     width: 900px;
     min-height: 1080px;
     background-color: white;
-    margin: 40px 40px 0;
+    margin: 40px 40px;
     padding-top: 24px;
     z-index: 5;
     box-shadow: 0 2px 12px rgba(128, 128, 128, 0.33);
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin: 0 64px;
+
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border: solid black;
+    border-radius: 8px;
+}
+
+.grid a {
+    text-decoration: none;
+}
+
+.grid a:visited {
+    color: black;
+}
+
+.icon {
+    height: 64px;
+    width: 64px;
+    margin: 0 32px;
+}
+
 .paper h1 {
-    font-family: Noto, sans-serif;
+    font-family: "Vollkorn", serif;
     align-self: center;
 }
 
+.paper h2 {
+    font-family: "Figtree", sans-serif;
+}
+
 .paper p {
-    font-family: Noto, sans-serif;
+    font-family: "Figtree", sans-serif;
     padding: 0 64px 0;
 }
 
@@ -219,11 +273,16 @@ button {
     background-color: rgb(97, 111, 148);
 }
 
+.folder-content-links .divider {
+    background-color: rgb(83, 115, 88);
+}
+
 .corner {
-    position: absolute;
+    position: relative;
     z-index: -1;
     background-color: bisque;
     height: 20px;
-    width: 20px;
-    left: 324px;
+    min-width: 20px;
+    right: 1088px;
+    top: 58px;
 }
